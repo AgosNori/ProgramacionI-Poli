@@ -24,25 +24,33 @@ print(datos)
 '''
 # 4) Escribir un programa que pregunte al usuario su edad y
 # muestre por pantalla si es mayor de edad o no. (utilizando condicionales)
-
+'''
 edad4 = int(input('Ingrese su edad:'))
 if edad4 >= 18:
     print('Es mayor de edad: ')
 else:
     print('Es menor de edad')
-
+'''
 # 5) Calcular el mayor y el menor, ordenarlos (como quieras).Utilizando las funciones 
-
+'''
 edad1,edad2 = 12,13
 mayor = max(edad1,edad2)
 menor = min(edad1,edad2)
 print(menor,mayor)
-
+'''
 
 # 6)Escribir un programa que almacene la cadena de caracteres
 #contraseña en una variable, pregunte al usuario por la contraseña e
 #imprima por pantalla si la contraseña introducida por el usuario coincide
 #con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.
+
+contra = 'contraseña'
+contraseña = input('Ingrese una contraseña: ')
+if contraseña == contra:
+    print('La clave ingresada coincide')
+else:
+    print('No coincide')
+
 
 # 7) Escribir un programa que pida al usuario un número entero y muestre
 #por pantalla si es par o impar
