@@ -104,26 +104,18 @@ else:
 # Entradas
 vegetariana = ('pimiento','tofu')
 no_vegetariana = ('peperoni','jamon','salmon')
-pizza = input('Ingrese cual desea : vegetariana o no vegetariana: ')
-if pizza == 'vegetariana':
+pizza = int(input('Ingrese cual desea : 1.vegetariana o 2.no vegetariana: '))
+#Procesos y salidas
+if pizza == 1:
     print(vegetariana)
     ingrediente = input('elija un ingrendiente:')
     if ingrediente == 'pimiento' or ingrediente == 'tofu':
         print('Su pizza es vegetariana y los ingredientes son: tomate, mozzarella y ',ingrediente)
-elif pizza == "no vegetariana":
+elif pizza == 2:
     print(no_vegetariana)
     ingrediente = input('elija un ingrendiente:')
     if ingrediente == 'peperoni' or ingrediente == 'jamon' or ingrediente == 'salmon':
         print('Su pizza es no vegetariana y los ingredientes son: tomate, mozzarella y ',ingrediente)
-
-    
-#Procesos
-
-
-#Salidas
-
-
-
 
 
 # 11) Una panadería vende barras de pan a 3.49€ cada una.
@@ -132,7 +124,6 @@ elif pizza == "no vegetariana":
 #barras vendidas que no son del día. Después el programa
 #debe mostrar el precio habitual de una barra de pan, el
 #descuento que se le hace por no ser fresca y el coste final total.
-
 
 #12) Los teléfonos de una empresa tienen el siguiente formato prefijo-caracteristica-numero
 #donde el prefijo es el código del país +54, y la extensión tiene dos dígitos
