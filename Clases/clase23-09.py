@@ -10,24 +10,34 @@ print('La longitud de la tupla es: ',len(colores))
 # sean ingresados por el usuario.
 
 #Entradas
+'''
 dni = int(input('Ingrese su DNI: '))
 nombre= input('Ingrese su nombre: ')
 apellido = input('Ingrese su apellido: ')
-edad = int(input('Ingrese su edad: '))
+edad3 = int(input('Ingrese su edad: '))
 nacionalidad =input('Ingrese su nacionalidad:')
 
 #Proceso
-datos = (dni,nombre.capitalize(),apellido.capitalize(),edad,nacionalidad.upper())
+datos = (dni,nombre.capitalize(),apellido.capitalize(),edad3,nacionalidad.upper())
 #Salidas
 print(datos)
-
+'''
 # 4) Escribir un programa que pregunte al usuario su edad y
 # muestre por pantalla si es mayor de edad o no. (utilizando condicionales)
 
-
-
+edad4 = int(input('Ingrese su edad:'))
+if edad4 >= 18:
+    print('Es mayor de edad: ')
+else:
+    print('Es menor de edad')
 
 # 5) Calcular el mayor y el menor, ordenarlos (como quieras).Utilizando las funciones 
+
+edad1,edad2 = 12,13
+mayor = max(edad1,edad2)
+menor = min(edad1,edad2)
+print(menor,mayor)
+
 
 # 6)Escribir un programa que almacene la cadena de caracteres
 #contraseña en una variable, pregunte al usuario por la contraseña e
