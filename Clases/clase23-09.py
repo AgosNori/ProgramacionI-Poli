@@ -43,22 +43,40 @@ print(menor,mayor)
 #contraseña en una variable, pregunte al usuario por la contraseña e
 #imprima por pantalla si la contraseña introducida por el usuario coincide
 #con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.
-
+'''
 contra = 'contraseña'
 contraseña = input('Ingrese una contraseña: ')
 if contraseña == contra:
     print('La clave ingresada coincide')
 else:
     print('No coincide')
-
+'''
 
 # 7) Escribir un programa que pida al usuario un número entero y muestre
 #por pantalla si es par o impar
+'''
+num = int(input('Ingrese un numero entero: '))
+resultado = num % 2
+if resultado == 0:
+    print('Es par')
+else:
+    print('Es impar')
+'''
 
 #8) Para tributar un determinado impuesto se debe ser mayor de 16 años
 #y tener unos ingresos iguales o superiores a 1000 € mensuales.
 #Escribir un programa que pregunte al usuario su edad y sus ingresos mensuales
 #y muestre por pantalla si el usuario tiene que tributar o no.
+
+edad8 = int(input('Ingrese su edad: '))
+ingresos = int(input('Ingrese sus ingresos mensuales: '))
+if edad8 > 16 and ingresos >=1000:
+    print('Debe tributar')
+else:
+    print('No tributa')
+                     
+
+
 
 #9) Escribir un programa para una empresa que tiene salas de juegos para todas las
 #edades y quiere calcular de forma automática el precio que debe cobrar a sus clientes
