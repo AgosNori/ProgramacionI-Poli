@@ -1,0 +1,4 @@
+#Caracteres de escape
+print('O "higgins')
+print('O \' Higgins')
+print('\n Hola \n soy Agos \t  Noriega')
