@@ -67,23 +67,29 @@ else:
 #y tener unos ingresos iguales o superiores a 1000 € mensuales.
 #Escribir un programa que pregunte al usuario su edad y sus ingresos mensuales
 #y muestre por pantalla si el usuario tiene que tributar o no.
-
+'''
 edad8 = int(input('Ingrese su edad: '))
 ingresos = int(input('Ingrese sus ingresos mensuales: '))
 if edad8 > 16 and ingresos >=1000:
     print('Debe tributar')
 else:
     print('No tributa')
-                     
-
-
+'''             
 
 #9) Escribir un programa para una empresa que tiene salas de juegos para todas las
 #edades y quiere calcular de forma automática el precio que debe cobrar a sus clientes
 #por entrar. El programa debe preguntar al usuario la edad del cliente y mostrar el precio
 #de la entrada. Si el cliente es menor de 4 años puede entrar gratis, si tiene entre 4 y 18
-#años debe pagar 5€ y si es mayor de 18 años, 10€.
-
+#años debe pagar 5$ y si es mayor de 18 años, 10$.
+'''
+edad9= int(input('Ingrese su edad :'))
+if edad9 < 4:
+    print('Entra gratis')
+elif edad9 >= 4 and edad9 < 18:
+    print('Debe abonar 5$')
+else:
+    print('Debe abonar 10$')
+'''
 
 # 10)La pizzería Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus clientes.
 #Los ingredientes para cada tipo de pizza aparecen a continuación.
@@ -95,6 +101,30 @@ else:
 #tomate que están en todas la pizzas. Al final se debe mostrar por pantalla si la pizza
 #elegida es vegetariana o no y todos los ingredientes que lleva.
 
+# Entradas
+vegetariana = ('pimiento','tofu')
+no_vegetariana = ('peperoni','jamon','salmon')
+pizza = input('Ingrese cual desea : vegetariana o no vegetariana: ')
+if pizza == 'vegetariana':
+    print(vegetariana)
+    ingrediente = input('elija un ingrendiente:')
+    if ingrediente == 'pimiento' or ingrediente == 'tofu':
+        print('Su pizza es vegetariana y los ingredientes son: tomate, mozzarella y ',ingrediente)
+elif pizza == "no vegetariana":
+    print(no_vegetariana)
+    ingrediente = input('elija un ingrendiente:')
+    if ingrediente == 'peperoni' or ingrediente == 'jamon' or ingrediente == 'salmon':
+        print('Su pizza es no vegetariana y los ingredientes son: tomate, mozzarella y ',ingrediente)
+
+    
+#Procesos
+
+
+#Salidas
+
+
+
+
 
 # 11) Una panadería vende barras de pan a 3.49€ cada una.
 #El pan que no es el día tiene un descuento del 60%.
@@ -102,3 +132,10 @@ else:
 #barras vendidas que no son del día. Después el programa
 #debe mostrar el precio habitual de una barra de pan, el
 #descuento que se le hace por no ser fresca y el coste final total.
+
+
+#12) Los teléfonos de una empresa tienen el siguiente formato prefijo-caracteristica-numero
+#donde el prefijo es el código del país +54, y la extensión tiene dos dígitos
+#(por ejemplo +54-2964-561232). Escribir un programa que pregunte por un
+#número de teléfono con este formato y muestre por pantalla el número de teléfono
+#sin el prefijo y la caracteristica.
