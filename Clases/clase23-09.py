@@ -100,7 +100,7 @@ else:
 #para que elija. Solo se puede eligir un ingrediente además de la mozzarella y el
 #tomate que están en todas la pizzas. Al final se debe mostrar por pantalla si la pizza
 #elegida es vegetariana o no y todos los ingredientes que lleva.
-
+'''
 # Entradas
 vegetariana = ('pimiento','tofu')
 no_vegetariana = ('peperoni','jamon','salmon')
@@ -117,7 +117,7 @@ elif pizza == 2:
     if ingrediente == 'peperoni' or ingrediente == 'jamon' or ingrediente == 'salmon':
         print('Su pizza es no vegetariana y los ingredientes son: tomate, mozzarella y ',ingrediente)
 
-
+'''
 # 11) Una panadería vende barras de pan a 3.49€ cada una.
 #El pan que no es el día tiene un descuento del 60%.
 #Escribir un programa que comience leyendo el número de
@@ -125,20 +125,40 @@ elif pizza == 2:
 #debe mostrar el precio habitual de una barra de pan, el
 #descuento que se le hace por no ser fresca y el coste final total.
 
-#12) Los teléfonos de una empresa tienen el siguiente formato prefijo-caracteristica-numero
-#donde el prefijo es el código del país +54, y la extensión tiene dos dígitos
-#(por ejemplo +54-2964-561232). Escribir un programa que pregunte por un
-#número de teléfono con este formato y muestre por pantalla el número de teléfono
-#sin el prefijo y la caracteristica.
+#Entradas
+barras = int(input('Ingrese la cant de barras vendidas (que no son del dia):'))
+#Procesos
+precio=20
+descuento = precio*0.60
+precio_total = precio*barras
+precio_desc= precio_total-descuento
+#Salidas
+print('Precio total: ',precio_total)
+print('Desc: ',descuento)
+print('Precio a pagar: ',precio_desc)
 
+
+
+
+#12) Los teléfonos de una empresa tienen el siguiente formato prefijo-caracteristica-numero
+#donde el prefijo es el código del país +54, y la extensión tiene 6 dígitos
+#(por ejemplo +54-2964-561232). Escribir un programa que pregunte por un
+#número de teléfono (ingresando 10 digitos) y muestre por pantalla el número con el prefijo.
+'''
+prefijo = input('Ingrese el prefijo de su pais (por ejemplo +54):')
+numero =input('Ingrese su numero de telefono :')
+print('Su numero de telefono es: ',prefijo+'-'+numero)
+'''
+# Ejercicio 13
 '''
 Escribir un programa que almacene las asignaturas de un curso (por ejemplo Matemáticas,
 Física, Química, Historia y Lengua) en una tupla, pregunte al usuario la nota que ha sacado
 en cada asignatura, y después las muestre por pantalla con el mensaje En <asignatura> has
 sacado <nota> donde <asignatura> es cada una des las asignaturas de la lista y <nota> cada una
 de las correspondientes notas introducidas por el usuario.'''
-
+# para cargar 2 o mas materias ( ejercicios de las materias)
+'''
 asignatura = input('ingrese una materia: ')
 nota= float(input('Ingrese la nota:'))
 materia =(asignatura)
-print('En ',materia,'has sacado ',nota)
+print('En ',materia,'has sacado ',nota)'''
