@@ -52,3 +52,17 @@ y=int(input("Otro número: "))
 print(maximo(x-3, minimo(x+2, y-5)))
 
 ''' 
+
+#Ejercicio 8
+'''Escribir una función que, dado un número de DNI, retorne True si el número es válido y False si no lo es. Para que un número de DNI sea válido debe tener entre 7 y 8 dígitos.'''
+
+#Ejercicio 9
+'''Escribir una función que muestre por pantalla el saludo ¡Hola amiga! cada vez que se la invoque.'''
+
+# Ejercicio 10
+'''Escribir una función a la que se le pase una cadena <nombre> y muestre por pantalla el saludo ¡hola <nombre>!.'''
+
+#Ejercicio 11
+'''Escribir una función que calcule el total de una factura tras aplicarle el IVA. La función debe recibir la cantidad sin IVA y el porcentaje de IVA a aplicar, y devolver el total de la factura. Si se invoca la función sin pasarle el porcentaje de IVA, deberá aplicar un 21%.'''
+
+
