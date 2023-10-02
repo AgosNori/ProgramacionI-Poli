@@ -3,21 +3,65 @@
 Imprimir un mensaje indicando si la dirección es válida o no,
 valiéndose de una función para decidirlo. Una dirección se considerará
 válida si contiene el símbolo "@".'''
-casilla=input('Ingrese su email:') # el usuario ingresa el correo
-def email (mail): # crea la funcion con el nombre de email y le pasamos el parametro 
-    if "@" in mail: # si el @ esta en mail
-        return True # va a retornar verdadero (True)
-    else: # si  el @ no esta en mail
-        return False # va a retornar falso (False)
+'''
+casilla=input('Ingrese su email:') # ingresa la
+def email (mail):
+    if "@" in mail:
+        return True
+    else:
+        return False
     
-es_valido = email(casilla) # creamos una variable a la que se le va a guardar el resultado de la funcion email  y el parametro ( que el casilla que ingresa el usuario)
-if es_valido == True: # si es resultado de es_valido es verdadero
-    print('La direccion es valida') # la direccion es valida
-else: # si el resultado de es_valido es falso
-    print('La direccion no es valida') # la direccion es invalida
-
+es_valido = email(casilla)
+if es_valido == True:
+    print('La direccion es valida')
+else:
+    print('La direccion no es valida')
+'''
 #Ejercicio 2
-'''Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar la sumatoria de todos los numeros ingresados (utilizando una función que realice dicha suma).'''
+'''Solicitar números al usuario hasta que ingrese el cero. Por cada uno,
+mostrar la sumatoria de los numeros ingresado (utilizando una función que realice dicha suma).'''
+'''
+def sumatoria (num):
+    sumaTotal = 0
+    while num != 0:
+        
+        sumaTotal = sumaTotal + num
+    return sumaTotal
+
+def sumatoria(numero):
+    suma=0
+  
+    while numero != 0:
+        suma =+ numero
+
+        1return suma
+
+ 
+num=int(input("Número a procesar: "))
+while num!=0:
+    #print("Suma:",sumatoria(num))
+    print(sumatoria(num))
+    num=int(input("Número a procesar: "))  
+    
+'''
+def sumatoria(numero):
+    suma = 0
+
+    while numero != 0:
+        suma += numero
+        numero = int(input("Número a procesar (0 para salir): "))
+     
+    return suma
+
+num = int(input("Número a procesar (0 para salir): "))
+while num != 0:
+    print("Suma:", sumatoria(num))
+    break 
+    num = int(input("Número a procesar (0 para salir): "))
+
+
+
+
 
 #Ejercicio 3
 '''Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar la suma de sus dígitos. Al finalizar, mostrar la sumatoria de todos los números ingresados y la suma de sus dígitos. Reutilizar la misma función realizada en el ejercicio 2.'''
