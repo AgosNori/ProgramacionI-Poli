@@ -3,6 +3,18 @@
 Imprimir un mensaje indicando si la dirección es válida o no,
 valiéndose de una función para decidirlo. Una dirección se considerará
 válida si contiene el símbolo "@".'''
+casilla=input('Ingrese su email:') # el usuario ingresa el correo
+def email (mail): # crea la funcion con el nombre de email y le pasamos el parametro 
+    if "@" in mail: # si el @ esta en mail
+        return True # va a retornar verdadero (True)
+    else: # si  el @ no esta en mail
+        return False # va a retornar falso (False)
+    
+es_valido = email(casilla) # creamos una variable a la que se le va a guardar el resultado de la funcion email  y el parametro ( que el casilla que ingresa el usuario)
+if es_valido == True: # si es resultado de es_valido es verdadero
+    print('La direccion es valida') # la direccion es valida
+else: # si el resultado de es_valido es falso
+    print('La direccion no es valida') # la direccion es invalida
 
 #Ejercicio 2
 '''Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar la sumatoria de todos los numeros ingresados (utilizando una función que realice dicha suma).'''
