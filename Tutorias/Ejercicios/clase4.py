@@ -6,6 +6,12 @@ El nombre se debe almacenar en una variable llamada nombre.
 A continuación se debe mostrar en pantalla el texto “Ahora estás en la matrix, [usuario]”,
 donde “[usuario]” se reemplazará por el nombre que el usuario haya ingresado.'''
 
+#Entradas
+nombre= input('Ingrese su nombre: ')
+# Salidas
+print('Ahora estas en la matrix, ',nombre)
+
+
 #Ejercicio 2
 '''Escribí un programa que solicite al usuario ingresar un número con decimales y
 almacenalo en una variable. A continuación, el programa debe solicitar al usuario
@@ -13,6 +19,15 @@ que ingrese un número entero y guardarlo en otra variable. En una tercera varia
 se deberá guardar el resultado de la suma de los dos números ingresados por el usuario.
 Por último, se debe mostrar en pantalla el texto “El resultado de la suma es [suma]”,
 donde “[suma]” se reemplazará por el resultado de la operación.'''
+
+#Entradas
+numD= float(input('Porfavor ingrese un numero decimal: '))
+numE = int(input('Porfavor ingrese un numero entero: '))
+#Procesos
+suma = numD+numE
+#Salidas
+print('El resultado de la suma es: ',suma)
+
 
 #Ejercicio 3
 '''Escribí un programa que solicite al usuario dos números y los almacene en dos variables.
@@ -22,24 +37,75 @@ A continuación, el programa debe solicitar al usuario que ingrese un tercer nú
 el cual se debe almacenar en una nueva variable. Por último, mostrá en pantalla el resultado
 de la multiplicación de este nuevo número por el resultado de la suma anterior.'''
 
+
+#Entradas
+num1 = int(input('Ingrese un numero: '))
+num2 = int(input('Ingrese otro numero: '))
+num3=  int(input('Ingrese otro numero mas: '))
+#Procesos
+suma = num1+num2
+multiplicacion = suma*num3
+#Salidas
+print('El resultado de la suma es: ',suma)
+print('El resultado de la multiplacion es: ',multiplicacion)
+
 #Ejercicio 4
 '''Escribí un programa que solicite al usuario ingresar la cantidad de kilómetros recorridos
 por una motocicleta y la cantidad de litros de combustible que consumió durante ese recorrido.
 Mostrar el consumo de combustible por kilómetro.'''
 
+#Entradas
+km = float(input('Porfavor ingrese la cantidad de km recorridos por una moto: '))
+litros = float(input('Ingrese la cantidad de litros que consumio: '))
+#Procesos
+consumo = km/litros
+#Salidas
+print('El consumo final es: ',consumo)
+
 #Ejercicio 5
 '''Escribí un programa que solicite al usuario ingresar tres números para luego mostrarle
 el promedio de los tres.'''
 
+
+#Entradas
+n1 = int(input('Ingrese el primer numero : '))
+n2 = int(input('Ingrese el segundo numero :'))
+n3 = int(input('Ingrese el tercer numero: '))
+#Procesos
+promedio= (n1+n2+n3)/3
+#Salidas
+print('El promedio de los tres numeros es: ',round(promedio,2))
+
 #Ejercicio 6
 '''Escribí un programa que solicite al usuario un número y le reste el 15%, almacenando
 todo en una única variable. A continuación, mostrar el resultado final en pantalla.'''
+
+#Entradas
+numerito = int(input('Ingrese un numero cualquiera :'))
+
+#Procesos
+resultFinal = numerito -numerito*0.15
+
+#Salidas
+print(resultFinal)
+
+
 
 #Ejercicio 7
 '''Escribí un programa que solicite al usuario el ingreso de dos palabras, las cuales se
 guardarán en dos variables distintas. A continuación, almacená en una variable la
 concatenación de la primera palabra, más un espacio, más la segunda palabra.
 Mostrá este resultado en pantalla.'''
+
+#Entradas
+palabra1 = input('Ingrese una palabra: ')
+palabra2 = input('Ingrese otra palabra: ')
+#Procesos
+palabrafinal= palabra1+' '+palabra2
+#Salidas
+print(palabrafinal)
+
+
 
 #Ejercicio 8
 '''Escribí un programa que solicite al usuario el ingreso de un texto y almacene ese
@@ -48,6 +114,13 @@ ingresado. Luego, solicitar al usuario que ingrese un número positivo menor a l
 de caracteres que tiene el texto que ingresó (por ejemplo, si escribió la palabra “HOLA”,
 tendrá que ser un número entre 0 y 4) y almacenar este número en una variable llamada indice.
 Mostrar en pantalla el carácter del texto ubicado en la posición dada por indice.'''
+
+
+#Entradas
+texto = input('Porfavor ingrese un texto: ')
+
+
+
 
 #Ejercicio 9
 '''Escribí un programa que le solicite al usuario ingresar una fecha formada por 8 números,
