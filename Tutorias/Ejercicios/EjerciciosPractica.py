@@ -153,19 +153,23 @@ else:
 #Ejercicio 9
 '''Escribir una función que muestre por pantalla el
 saludo ¡Hola amiga! cada vez que se la invoque.'''
-
+'''
 def saludo ():
     print('¡Hola Amiga!')
 saludo()
+
+'''
+
 
 # Ejercicio 10
 '''Escribir una función a la que se le pase una
 cadena <nombre> y muestre por pantalla el saludo
 ¡hola <nombre>!'''
 
-#entradas
-#procesos
-#salidas
+def funcion(nombre1,nombre2):  # creamos la funcion y le pasamos el parametro
+    print('¡Hola',nombre1,' y ',nombre2) # imprimimos el saludo
+    
+funcion('Agos','Pablo') # invocamos a la funcion , y le pasamos el parametro
 
 
 #Ejercicio 11
