@@ -167,13 +167,25 @@ cadena <nombre> y muestre por pantalla el saludo
 ¡hola <nombre>!'''
 
 def funcion(nombre1,nombre2):  # creamos la funcion y le pasamos el parametro
-    print('¡Hola',nombre1,' y ',nombre2) # imprimimos el saludo
+    print('¡Hola',nombre1,' y ',nombre2,'!') # imprimimos el saludo
     
 funcion('Agos','Pablo') # invocamos a la funcion , y le pasamos el parametro
 
 
+
 #Ejercicio 11
-'''Escribir una función que calcule el total de una factura tras aplicarle el IVA. La función debe recibir la cantidad sin IVA y el porcentaje de IVA a aplicar, y devolver el total de la factura. Si se invoca la función sin pasarle el porcentaje de IVA, deberá aplicar un 21%.'''
+'''Escribir una función que calcule el total de una
+factura tras aplicarle el IVA. La función debe recibir la
+cantidad sin IVA y el porcentaje de IVA a aplicar, y devolver
+el total de la factura. Si se invoca la función sin pasarle el
+porcentaje de IVA, deberá aplicar un 21%.'''
+
+def iva (cantidadTotal, porcentajeIva):
+    factura = (cantidadTotal * porcentajeIva)/100
+    print(factura)
+
+
+
 
 # Ejercicio 12
 ''' Escribir un programa que pregunte al usuario por el numero de horas trabajadas y el coste por hora. Despues debe mostrar por pantalla la paga que le corresponde'''
