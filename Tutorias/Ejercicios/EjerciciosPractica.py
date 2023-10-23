@@ -183,7 +183,8 @@ porcentaje de IVA, deberá aplicar un 21%.'''
 def iva (cantidadTotal, porcentajeIva):
     factura = (cantidadTotal * porcentajeIva)/100
     print(factura)
-
+#el usuario debe ingresar la cantidad total sin iva y el iva
+# si el usuario solo ingresa la cantidad, se le debe aplicar el 21%
 
 
 
