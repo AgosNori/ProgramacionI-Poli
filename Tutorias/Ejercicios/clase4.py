@@ -116,8 +116,10 @@ tendrá que ser un número entre 0 y 4) y almacenar este número en una variable
 Mostrar en pantalla el carácter del texto ubicado en la posición dada por indice.'''
 
 
-#Entradas
-texto = input('Porfavor ingrese un texto: ')
+
+
+
+
 
 
 

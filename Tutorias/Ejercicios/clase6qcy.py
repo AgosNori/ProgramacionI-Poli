@@ -11,8 +11,8 @@ print(imprimir)
 def saludoNomApe (nombre,apellido):
     saludo = 'Hola'+' '+nombre.capitalize()+' '+apellido
     print(saludo)
+    
 saludoNomApe('agos','noriega')
-
 
 
 def nom_edad (nombre,edad):
