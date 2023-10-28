@@ -2,6 +2,26 @@
 #Ejercicio 1:
 '''Imprime <Hola Mundo> si a es mayor a b '''
 
+# entradas
+a = 36
+b = 65
+
+#procesos y salidas
+if a > b :
+    print('HOLA MUNDO')
+else:
+    print('chau')
+
+
+
+
+
+
+
+
+
+
+
 
 #Ejercicio 2:
 ''' Determinar si alguien es menor de edad o no. Pide al usuario la

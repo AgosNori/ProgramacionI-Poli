@@ -180,13 +180,13 @@ cantidad sin IVA y el porcentaje de IVA a aplicar, y devolver
 el total de la factura. Si se invoca la función sin pasarle el
 porcentaje de IVA, deberá aplicar un 21%.'''
 
-def iva (cantidadTotal, porcentajeIva):
+def iva (cantidadTotal, porcentajeIva =21):
     factura = (cantidadTotal * porcentajeIva)/100
-    print(factura)
-#el usuario debe ingresar la cantidad total sin iva y el iva
-# si el usuario solo ingresa la cantidad, se le debe aplicar el 21%
+    total = cantidadTotal + factura
+    print(total)
 
-
+iva(2000,10) # aca le estoy pasando 10 % de iva
+iva (2000) # esta tomando por defecto el 21%
 
 # Ejercicio 12
 ''' Escribir un programa que pregunte al usuario por el numero de horas trabajadas y el coste por hora. Despues debe mostrar por pantalla la paga que le corresponde'''
