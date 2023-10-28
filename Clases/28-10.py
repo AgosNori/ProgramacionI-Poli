@@ -63,12 +63,20 @@ elif carnetDescuentos > 150:
 
 #Ejercicio 4:
 '''Guardar una contraseña como password. Crea un sistema de seguridad
-donde el ordenador muestre un mensaje <Ordenar Bloqueado. contraseña
+donde el ordenador muestre un mensaje <Ordenador  Bloqueado. contraseña
 incorrecta> si el usuario falla la contraseña. En caso contrario ,
 que muestre por pantalla <Bienvenid@>'''
 
+# entradas
+contraseña = 1234
+password = int(input('Porfavor ingrese la contraseña: '))
 
+#procesos y salidas
 
+if password == contraseña:
+    print('Bienvenido')
+else:
+    print('Ordenandor Bloqueado. Contraseña incorrecta')
 
 
 
