@@ -66,7 +66,7 @@ elif carnetDescuentos > 150:
 donde el ordenador muestre un mensaje <Ordenador  Bloqueado. contraseña
 incorrecta> si el usuario falla la contraseña. En caso contrario ,
 que muestre por pantalla <Bienvenid@>'''
-
+'''
 # entradas
 contraseña = 1234
 password = int(input('Porfavor ingrese la contraseña: '))
@@ -79,14 +79,47 @@ else:
     print('Ordenandor Bloqueado. Contraseña incorrecta')
 
 
-
+'''
 #Ejercicio 5:
-'''Partiendo de la tarifa anual (que puede cambiar), nos piden que debemos calcular el precio de la tarifa de nuestro polideportivo, sabiendo las siguientes condiciones:
+'''Partiendo de la tarifa anual (que puede cambiar), nos piden que
+debemos calcular el precio de la tarifa de nuestro polideportivo,
+sabiendo las siguientes condiciones:
 Criterio 1: Si es mayor de edad y esta trabajando -> Paga el 100%
 Criterio 2: Si es menor de edad y esta trabajando -> Paga el 95%
 Criterio 3: Si es mayor de edad y no esta trabajando -> Paga el 75%
 Criterio 4: Si es menor de edad y no esta trabajando -> Paga el 50%
 '''
+
+# entradas
+edad = int(input('Porfavor ingrese su edad:'))
+situacionLaboral = input('Activo o No: ')
+tarifa = int(input('Porfavor ingrese la tarifa por persona: '))
+
+if edad > 18 and situacionLaboral == "Activo":
+    print('Paga el 100%')
+    print('Debe abonar: ', tarifa)
+    
+elif edad < 18 and situacionLaboral == "Activo":
+    print('Paga el 95%')
+    total = tarifa - (tarifa* 0.05)
+    print('Debe abonar:',total)
+
+elif edad > 18 and situacionLaboral == "No":
+    print('Paga el 75%')
+    total = tarifa - (tarifa* 0.25)
+    print('Debe abonar:',total)
+
+elif edad < 18 and situacionLaboral == "No":
+    print('Paga el 50%')
+    total= tarifa - (tarifa * 0.5)
+    print('Debe abonar: ',total)
+
+
+
+
+
+
+
 
 # Ejercicio 6:
 ''' Imprimir los numeros del 1 al 10 '''

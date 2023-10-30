@@ -179,7 +179,7 @@ factura tras aplicarle el IVA. La función debe recibir la
 cantidad sin IVA y el porcentaje de IVA a aplicar, y devolver
 el total de la factura. Si se invoca la función sin pasarle el
 porcentaje de IVA, deberá aplicar un 21%.'''
-
+'''
 def iva (cantidadTotal, porcentajeIva =21):
     factura = (cantidadTotal * porcentajeIva)/100
     total = cantidadTotal + factura
@@ -187,9 +187,33 @@ def iva (cantidadTotal, porcentajeIva =21):
 
 iva(2000,10) # aca le estoy pasando 10 % de iva
 iva (2000) # esta tomando por defecto el 21%
-
+'''
 # Ejercicio 12
-''' Escribir un programa que pregunte al usuario por el numero de horas trabajadas y el coste por hora. Despues debe mostrar por pantalla la paga que le corresponde'''
+''' Escribir un programa que pregunte al usuario por el numero
+de horas trabajadas y el coste por hora. Despues debe mostrar
+por pantalla la paga que le corresponde'''
+'''
 
+horasTrabajadas = float(input('Porfavor ingrese la cantidad de horas trabajadas: '))
+costeXHora =float(input('Porfavor ingrese el coste por hora: '))
+
+sueldo = horasTrabajadas*costeXHora
+
+print('El sueldo a cobrar es: ',sueldo,'$')
+'''
 #Ejercicio 13
-''' Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el indice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase " tu indice de masa corporal es <imc> " donde <imc> es el indice de masa corporal calculado redondeado con dos decimales'''
+''' Escribir un programa que pida al usuario su peso (en kg)
+y estatura (en metros), calcule el indice de masa corporal
+y lo almacene en una variable,y muestre por pantalla la frase
+" tu indice de masa corporal es <imc> " donde <imc>
+es el indice de masa corporal calculado redondeado con dos
+decimales'''
+
+peso=float(input('Porfavor ingrese su peso en kg'))
+estatura = float(input('Porfavor ingrese su estatura en metros'))
+
+imc = peso /(estatura**2)
+
+print('Tu indice de masa corporal es: ',round(imc,2))
+
+
