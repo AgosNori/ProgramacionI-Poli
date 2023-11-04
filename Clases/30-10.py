@@ -119,6 +119,14 @@ generar_n_caracteres(3,"~")
 # se ingrese el nombre y el año de nacimiento de tres personas
 # se calcula cuantos años cumpliran durante el año en curso
 # se imprime en pantalla
-# 9- Definir una tupla con 10 edades de personas. Imprimir la cantidad de personas con edades superiores a 20. Puedes variar el ejercicio para que sea el usuario quien ingrese las edades.
-# 10- Crear una funcion contar_vocales(), que reciba una palabra y cuente cuantas letras "a" tiene, cuantas letras "e" tiene y asi hasta completar todas las vocales.
-#Se puede hacer que el usuario ingrese quien elija la palabra
+
+
+
+
+# 9- Definir una tupla con 10 edades de personas.
+#Imprimir la cantidad de personas con edades superiores a 20.
+#Puedes variar el ejercicio para que sea el usuario quien ingrese las edades.
+
+# 10- Crear una funcion contar_vocales(), que reciba una palabra y cuente
+#cuantas vocales tiene en la palabra.
+#Se puede hacer que el usuario ingrese quien elija la palabra.

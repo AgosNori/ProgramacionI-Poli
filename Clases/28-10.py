@@ -89,7 +89,7 @@ Criterio 2: Si es menor de edad y esta trabajando -> Paga el 95%
 Criterio 3: Si es mayor de edad y no esta trabajando -> Paga el 75%
 Criterio 4: Si es menor de edad y no esta trabajando -> Paga el 50%
 '''
-
+'''
 # entradas
 edad = int(input('Porfavor ingrese su edad:'))
 situacionLaboral = input('Activo o No: ')
@@ -113,17 +113,26 @@ elif edad < 18 and situacionLaboral == "No":
     print('Paga el 50%')
     total= tarifa - (tarifa * 0.5)
     print('Debe abonar: ',total)
-
-
-
-
-
+'''
 
 
 
 # Ejercicio 6:
 ''' Imprimir los numeros del 1 al 10 '''
 
+
 #Ejercicio 7:
-''' Tenemos la pantalla del celular bloqueada. Partiendo de un pin secreto, intentaremos desbloquear la pantalla. Tenemos hasta tres intentos.
-Simula el proceso con Python. En caso de acceder, lanza al usuario <Login Correcto> , sino <Llamando a la policia>'''
+''' Tenemos la pantalla del celular bloqueada.
+Partiendo de un pin secreto, intentaremos desbloquear
+la pantalla. Tenemos hasta tres intentos.Simula el proceso con
+Python. En caso de acceder, lanza al usuario <Login Correcto> ,
+sino <Llamando a la policia>'''
+
+
+
+
+
+
+
+
+
