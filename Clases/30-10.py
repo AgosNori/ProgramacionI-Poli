@@ -97,12 +97,12 @@ es_palindromo(palabraPrueba)
 # 6- Definir una funcion generar_n_caracteres() que
 #tome un entero n y devuelva el caracter multiplicado por n.
 #Por ejemplo: generar_n_caracteres(5,"x") deberia devolver "xxxxx".
-
+'''
 def generar_n_caracteres(n,caracter):
     print(n*caracter)
     
 generar_n_caracteres(3,"~")
-
+'''
 
 
 # 7 -Definir un histograma procedimiento() que tome una tupla de
@@ -111,22 +111,84 @@ generar_n_caracteres(3,"~")
 # **
 # ***
 # ****
+'''
+def procedimiento (tupla):
+    for i in range(len(tupla)):
+        print(i * '~')
+        
+numeros = (1,2,3)
+procedimiento(numeros)
 
-
+'''
 
 # 8- Escribir un pequeño programa donde: 
 # se ingrese el año en curso
 # se ingrese el nombre y el año de nacimiento de tres personas
 # se calcula cuantos años cumpliran durante el año en curso
 # se imprime en pantalla
+'''
+año = int(input('ingrese el año en curso: '))
+nomU1= input('porfavor ingrese su nombre: ')
+añonacU1= int(input('Ingrese el año de nacimiento: '))
+nomU2= input('porfavor ingrese su nombre: ')
+añonacU2= int(input('Ingrese el año de nacimiento: '))
+nom3= input('porfavor ingrese su nombre: ')
+añonacU3= int(input('Ingrese el año de nacimiento: '))
 
+edadU1= año-añonacU1
+edadU2= año-añonacU2
+edadU3= año-añonacU3
 
-
-
+print('el usuario 1 , tendra: ',edadU1)
+print('el usuario 2 , tendra: ',edadU2)
+print('el usuario 3 , tendra: ',edadU3)
+'''
 # 9- Definir una tupla con 10 edades de personas.
 #Imprimir la cantidad de personas con edades superiores a 20.
-#Puedes variar el ejercicio para que sea el usuario quien ingrese las edades.
+#Puedes variar el ejercicio para que sea el usuario quien ingrese
+#las edades.
+'''
+def mayor20 (tupla):
+    contador =0
+    for i in tupla:
+        if i > 20:
+            contador += 1
+    print('La cantidad de edades mayores a 20 son: ',contador)
+tupla= (12,34,21,23,54,12,376,54,76,8)
+mayor20(tupla)
 
-# 10- Crear una funcion contar_vocales(), que reciba una palabra y cuente
+def mayor20(tupla):
+    contador =0
+    for i in tupla:
+        if i > 20:
+            contador += 1
+    print('La cantidad de edades mayores a 20 son: ',contador)
+edades = ()
+while len(edades) < 10:
+    num= int(input('edad: '))
+    edades += (num,) 
+mayor20(edades)
+'''
+# 10- Crear una función contar_vocales(), que reciba una palabra y cuente
 #cuantas vocales tiene en la palabra.
 #Se puede hacer que el usuario ingrese quien elija la palabra.
+
+
+def contar_vocales():
+    palabra = input('ingrese una palabra: ')
+    contador = 0
+    vocales = 'aeiou'
+    for i in palabra.lower():
+        if i in vocales:
+            contador += 1
+    print(' la cantidad de vocales es : ', contador)
+    
+contar_vocales()
+
+
+
+
+
+
+
+
