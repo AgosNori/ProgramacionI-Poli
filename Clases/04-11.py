@@ -58,7 +58,7 @@ mayoresMenores()
 '''Ejercicio 4:
 Diseñar un algoritmo que calcule la longitud de la circunferencia
 y el area del circulo de radio dado'''
-
+'''
 def circunferencia (radio):
     pi = 3.1415
     longitud = pi*(2*radio)
@@ -67,12 +67,26 @@ def circunferencia (radio):
     print('El area de la circunferencia es: ', area)
 
 circunferencia(2)
-
+'''
 
 '''Ejercicio 5:
-Diseñar un algoritmo que calcule la superficie de un triangulo a partir
-del ingreso de su base y altura, y muestre su resultado.'''
+Diseñar un algoritmo que calcule la superficie de un triangulo
+a partir del ingreso de su base y altura, y muestre su
+resultado.'''
 
+def superficie(base,altura):
+    sup = (base*altura)/2
+    print(sup)
+    
+superficie(2,10)
+    
+def super():
+    base = float(input('Ingrese la base: '))
+    altura = float(input('Ingrese la altura: '))
+    superficie = (base*altura)/2
+    print('La superficie del triangulo es: ',superficie)
+    
+super()
 
 
 
